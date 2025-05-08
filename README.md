@@ -335,19 +335,23 @@ seq 3 | sed '2a hello'
 
 seq 2 | sed '2i hello'
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/a89bc3e3-9ba9-431f-a2d8-439f213b83f6)
 
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/e87efd85-2427-4357-ad8a-23b4ac0be44c)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/28e3fa19-c804-46a1-a58e-8f75b8c93bf4)
 
 
 sed -n '2,4{s/$/*/;p}' file23
 
+![image](https://github.com/user-attachments/assets/0a7e2fc7-1d97-4a1a-8951-7151fa5bace7)
 
 #Sorting File content
 cat > file21
@@ -360,6 +364,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/825d6adb-17a0-40da-abfe-bd7b199de67c)
 
 
 cat > file22
@@ -374,12 +379,14 @@ cat > file22
 uniq file22
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/6610a26b-7175-40a5-94eb-8198dd02c8aa)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![image](https://github.com/user-attachments/assets/288074b6-9a26-4599-a5b9-f700b3c18beb)
 
 cat < urllist.txt
 ```
@@ -397,16 +404,19 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/22b1a615-c1d9-412d-834d-d927318d2e00)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/e0676aab-e6bd-4901-b451-8c534d186e1f)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/8261e782-2b9a-415d-8092-41c0c214bc23)
 
 
 mkdir backupdir
@@ -417,10 +427,12 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/cf9bc030-3899-4a3b-a575-3a3db0656e0c)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/e0105c2d-52ee-4e42-b466-640e8d912bd9)
 
 gzip backup.tar
 
